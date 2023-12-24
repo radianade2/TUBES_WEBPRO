@@ -5,6 +5,6 @@ Website menggunakan framework Laravel
 | Category | Challenge |
 | --- | --- |
 | app          | [http/controllers](/app/)
-| public       | [public](/public/)
+| public       | [images](/public/)
 | resources    | [views](/resources/)
 | routes       | [web](/routes/)
