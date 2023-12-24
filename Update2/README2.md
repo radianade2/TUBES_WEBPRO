@@ -4,7 +4,7 @@ Website menggunakan framework Laravel
 ### FILE LARAVEL
 | Category | Challenge |
 | --- | --- |
-| app          | [app](/app/)
+| app          | [http/controllers](/app/)
 | bootstrap    | [bootstrap](/bootstrap/)
 | config       | [config](/config/)
 | database     | [database](/database/)
