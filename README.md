@@ -2,7 +2,7 @@
 SKINMATE: WEATHER SKINCARE RECOMMENDATION
 
 ### UPDATE TUBES
-|UPDATE|GO TO|
-|UPDATE 1| LINK |
-|UPDATE 2| LINK |
-|UPDATE 3| LINK |
+| UPDATE | GO TO |
+| --- | --- |
+| Update 1       | [1](/Update1/)
+| Update 2       | [2](/Update2/)
