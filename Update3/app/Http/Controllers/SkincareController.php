@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use App\Models\Skincare;
 
 class SkincareController extends Controller {
     public function face(){
@@ -15,7 +16,10 @@ class SkincareController extends Controller {
     }
 
     public function halaman_hasil($kesimpulan){
-        return view('try3', ['kesimpulan' => $kesimpulan]);
+        // Mengambil semua data dari tabel 'datajawaban_tubeswebpro'
+        $skincareData = Skincare::all();
+        // Lakukan operasi lain sesuai kebutuhan Anda
+        return view('try3', ['kesimpulan' => $kesimpulan, 'skincareData' => $skincareData]);
     }
 
     public function prosesInput(Request $request){
