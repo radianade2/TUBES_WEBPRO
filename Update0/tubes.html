@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/tet2lgm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="tubes.css" rel="stylesheet">
+    <title>SKINMATE: TUBES WEBPRO</title>
+</head>
+<body>
+    <div class="container-fluid px-0">
+        <div class="row">
+            <div class="col-12">
+                <div class="container-flex" style="font-family: Georgia; color: #D1BCA5;">
+                    <div class="row">
+                        <div class="col-8" style="background-color: #004369; height:60px; padding-top: 10px; padding-left: 38px;"> 
+                            <img src="C:\Users\Radiana\Documents\Code_Project\HTML_code\WEBPRO KELAS\SMLOGO.png" alt="Logo" width="40" height="40">
+                            SKINMATE
+                        </div>
+                        <div class="col-4" style="background-color: #004369; height: 60px; Padding-top: 16px;">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> WEATHER </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">WEATHER 1</a></li>
+                                        <li><a class="dropdown-item" href="#">WEATHER 2</a></li>
+                                        <li><a class="dropdown-item" href="#">WEATHER 3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> SKINCARE </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">SKINCARE 1</a></li>
+                                        <li><a class="dropdown-item" href="#">SKINCARE 2</a></li>
+                                        <li><a class="dropdown-item" href="#">SKINCARE 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="container-flex">
+                    <div class="row mt-5 mb-5">
+                        <div class="col-fluid px-0" style="background-color: black;">
+                            <!-- <img src="https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-soil-60013.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid opacity-50" alt="gambar1" width="200px" height="500px" >
+                            <img src="https://images.pexels.com/photos/7796619/pexels-photo-7796619.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid opacity-50" alt="gambar2" width="200px" height="500px">
+                            <img src="https://images.pexels.com/photos/1710352/pexels-photo-1710352.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid opacity-50" alt="gambar3" width="200px" height="500px">
+                            <img src="https://images.pexels.com/photos/2583847/pexels-photo-2583847.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid opacity-50" alt="gambar3" width="200px" height="500px">                             -->
+                            <img id="gambar-rotasi" src="tubes.js" alt="Gambar Rotasi">
+                            <!-- https://images.pexels.com/photos/1027393/pexels-photo-1027393.jpeg?auto=compress&cs=tinysrgb&w=600 -->
+                            <div class="col-8 text-center d-flex flex-column justify-content-center align-items-center">
+                                <img src="C:\Users\Radiana\Documents\Code_Project\HTML_code\WEBPRO KELAS\SMLOGO.png" alt="Logo" width="100" height="100">
+                                <h1 style="font-family: lora, serif; font-size: 55px;">SKINMATE</h1>
+                                <p style="font-family: lora, serif; font-size: 15px;">WEATHER SKINCARE RECOMMENDATION</p>
+                                <br>
+                                <br>
+                                <p style="font-family: 'Inter'; margin: 5px;">LOVE YOUR   SKIN   LOVE  THE  WEATHER</p>
+                                <p style="font-family: 'Inter'; margin: 5px;">GET YOUR RECOMMENDATION HERE!</p>
+                                <br>
+                                <br>
+                                <button type="button" class="btn" style="background-color: #004369; color: white; width: 300px; border-radius: 0%;">FREE TEST</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="container mb-5 border" style="background-color: #004369; border-color: #D9D9D9; font-family: lora, serif; font-style: normal; font-weight: 700;">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="col text-center p-2" style="background-color: #D1BCA5;" height="50px">
+                                CHOOSE YOUR LOCATION
+                            </div>
+                            <div class="col text-center p-4" style="background-color: #F8F8F6;" height="400px">
+                                <input type="text" placeholder="type your city" id="cityinput">
+                                <!-- <section class="inputs">
+                                    <input type="text" placeholder="type your city" id="cityinput">
+                                    <input type="submit" value="Submit" id="add">
+                                    <button placeholder="submit" id="add"></button>
+                                  </section> -->
+                            </div>
+                        </div>
+
+                        <div class="col-12 px-0 mt-3">
+                            <div class="col text-center p-2" style="background-color: #D1BCA5;" height="50px">
+                                IDENTIFY YOUR PROFILE
+                            </div>
+                            <div class="col text-center" style="background-color: #F8F8F6; border-color: #004369;">
+                                <!-- <div class="row px-0"> -->
+                                    <div class="col-12 px-0 py-4 border-bottom border-2">
+                                        GENDER
+                                        <div class="row justify-content-center m-4" style="color: #737373;">
+                                            <div class="mx-2 col-2">
+                                                <input type="radio" name="gender_input" value="MALE">MALE</input>
+                                            </div>
+                                            <div class="mx-2 col-2">
+                                                <input type="radio" name="gender_input" value="FEMALE">FEMALE</input>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 px-0 py-4 border-bottom" style="background-color: #F8F8F6;">
+                                        AGE
+                                        <div class="dropdown m-4">
+                                            <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #737373;">
+                                                choose your age
+                                            </a>
+                                          
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">10-20</a></li>
+                                              <li><a class="dropdown-item" href="#">21-30</a></li>
+                                              <li><a class="dropdown-item" href="#">31-40</a></li>
+                                              <li><a class="dropdown-item" href="#">41-60</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+
+                                    
+
+                                <!-- </div>   -->
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 px-0 mt-3">
+                            <div class="col text-center p-2" style="background-color: #D1BCA5;" height="50px">
+                                INACCURATE     -     NEUTRAL     -     ACCURATE
+                            </div>
+                            <div class="col text-center" style="background-color: #F8F8F6; border-color: #004369;" height="100px">
+                                <div class="col-12 px-0 py-4 border-bottom border-2">
+                                    SKIN TYPE
+                                    <div class="row justify-content-center m-4" style="color: #737373;">
+                                        <div class="mx-2 col-2">
+                                            <input type="radio" name="gender_input" value="OILY">OILY</input>
+                                        </div>
+                                        <div class="mx-2 col-2">
+                                            <input type="radio" name="gender_input" value="DRY">DRY</input>
+                                        </div>
+                                        <div class="mx-2 col-2">
+                                            <input type="radio" name="gender_input" value="COMBINATION">COMBINATION</input>
+                                        </div>
+                                        <div class="mx-2 col-2">
+                                            <input type="radio" name="gender_input" value="NORMAL">NORMAL</input>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 px-0 py-4 border-bottom border-2">
+                                    SKIN SENSITIVITY
+                                    <div class="row-12">
+                                        <div class="row justify-content-center m-4">
+                                            <div class="row justify-content-center" style="color: #737373;">
+                                                <div class="col-2 mx-2">
+                                                    INACCURATE
+                                                </div>
+                                                <div class="col-4 mx-2">
+                                                    <input type="range" class="custom-range form-range" min="1" max="5" id="custom-range">
+                                                </div>
+                                                <div class="col-2 mx-2">
+                                                    ACCURATE
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 px-0 py-4 border-bottom border-2">
+                                    ACTIVITY
+                                    <div class="row-12">
+                                        <div class="row justify-content-center m-4">
+                                            <div class="row justify-content-center" style="color: #737373;">
+                                                <div class="col-2 mx-2">
+                                                    INDOOR
+                                                </div>
+                                                <div class="col-4 mx-2">
+                                                    <input type="range" class="custom-range form-range" min="1" max="5" id="custom-range">
+                                                </div>
+                                                <div class="col-2 mx-2">
+                                                    OUTDOOR
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 px-0 py-4 border-bottom border-2">
+                                    PREGNANCY STATUS
+                                    <div class="row justify-content-center m-4" style="color: #737373;">
+                                        <div class="col-1">
+                                            <input type="radio" name="gender_input" value="PREGYES">YES</input>
+                                        </div>
+                                        <div class="col-1">
+                                            <input type="radio" name="gender_input" value="PREGNO">NO</input>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 px-0 py-4 border-bottom border-2">
+                                    SUN ALLERGIC STATUS
+                                    <div class="row justify-content-center m-4" style="color: #737373;">
+                                        <div class="col-1">
+                                            <input type="radio" name="gender_input" value="PREGYES">YES</input>
+                                        </div>
+                                        <div class="col-1">
+                                            <input type="radio" name="gender_input" value="PREGNO">NO</input>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <a type="button" href="./tubes2.html" class="btn m-4" style="background-color: #D1BCA5; font-weight: 500; width: 150px; border-radius: 0%; font-weight: 700;">SUBMIT</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5">
+                <div class="container-fluid" style="background-color:#004369;">
+                    <div class="row m-3 p-3" style="color: #fff; font-family: 'Lato';">
+                        <h3>ABOUT US</h3>
+
+                        <p>Ini adalah website rekomendasi perawatan kulit berdasarkan prediksi cuaca, selain itu rekomendasi berdasarkan parameter kondisi saat ini. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+if($gender=='FEMALE' && $preg == 'YES' && $sun == 'YES' && ($sens == 4 || $sens == 5) && ($act == 1 || $act == 2 || $act == 3) && $skintype == 'OILY' && $temp>=25 && uv>=7){
+    $moist = "Skintific 5X Ceramide Barrier Repair Moisture Gel Moisturizer";
+    $serum = "The Ordinary Hyaluronic Acid 2% + B5";
+    $ss = "Holyshield! UV Matery Sunscreen gel spf 50+ PA++++";
+}else{
+    if($sun == 'YES' && $skintype == 'DRY' && ($sens == 4 || $sens == 5) && ($act == 1 || $act == 2 || $act == 3) && $temp>=25 && uv>=7){
+        $moist = "Avoskin Your skin bae Glow Concentrate Treatment ";
+        $serum = "NPure Triphase serum marigold";
+        $ss = "NPure Sunscreen Cica Beat the sun";
+    }else{
+        if($skintype == 'DRY'){
+            if(($act == 1 || $act == 2 || $act == 3) && $temp<25 && uv<7){
+                $moist = "CeraVe Moisturizing Cream";
+                $serum = "Hada Labo Gokujyun Hyaluronic Acid Lotion";
+                $ss = "Neutrogena Hydro Boost Water Gel Lotion SPF 30";
+            }else if(($act == 4 || $act == 5) && $temp>=25 && uv>=7){
+                $moist = "La Roche Posay Effaclar";
+                $serum = "The Ordinary Hyaluronic Acid 2% + B5";
+                $ss = "CeraVe Hydrating Mineral Sunscreen SPF 30";
+            }
+        } else if($skintype == 'OILY'){
+            if(($act == 1 || $act == 2 || $act == 3) && $temp<25 && uv<7){
+                $moist = "Cetaphil Pro Oil Absorbing Moisturizer";
+                $serum = "The Ordinary Niacinamide 10% + Zinc 1%";
+                $ss = "Biore UV Aqua Rich Watery Essence SPF 50+ PA++++";
+            }else if(($act == 4 || $act == 5) && $temp>=25 && uv>=7){
+                $moist = "Skintific 5X Ceramide Barrier Repair Moisture Gel Moisturizer";
+                $serum = "The Ordinary Hyaluronic Acid 2% + B5";
+                $ss = "Facetology Triple care sunscreen";
+            }
+        }else{
+            //untuk tidak ada kondisi khusus
+            $moist = "";
+            $serum = "";
+            $ss = "";
+        }
+    }
+}
+
+</html>
+
+
