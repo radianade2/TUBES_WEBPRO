@@ -1,0 +1,14 @@
+/* Change the track color */
+.custom-range.form-range::-webkit-slider-runnable-track {
+    background-color: #D9D9D9; /* Change this to your desired color */
+}
+
+/* Change the thumb (handle) color */
+.custom-range.form-range::-webkit-slider-thumb {
+    background-color: #004369; /* Change this to your desired color */
+    border: 1px solid #004369; /* Change this to your desired color */
+}
+
+.col.text-center:hover {
+    background-color: #F8F8F6;
+}
