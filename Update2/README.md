@@ -1,5 +1,5 @@
 ## UPDATE 2
-Website menggunakan framework Laravel
+Website dipindahkan menggunakan framework Laravel
 
 ### FILE LARAVEL
 | Category | Challenge |
