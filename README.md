@@ -17,8 +17,12 @@ Beberapa hal yang menjadi parameter pengambilan keputusan adalah sebagai berikut
 - Sun allergic
 - pregnancy
 
+Pengambilan temperature dan UV index berdasarkan lokasi, di-API dengan https://api.openweathermap.org/data/2.5/weather
+Sedangkan untuk kondisi personal dilakukan user input spesifik.
+
 Ada beberapa kasus khusus untuk diambil pengkondisian, yaitu seperti berikut:
-nananana
+![Screenshot 2024-01-02 215500](https://github.com/radianade2/TUBES_WEBPRO/assets/147175202/e4b80ac8-86c1-4149-a1c8-729766b774e4)
+
 
 ### UPDATE TUBES
 | PROGRESS | UPDATE |
