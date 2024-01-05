@@ -59,7 +59,7 @@
                         <div class="col-6 mb-3">
                             <img src="https://cdn-icons-png.flaticon.com/128/5826/5826371.png" alt="weatherDescription">
                         </div>
-                        Temperature: {{ $weatherTemp }} °C
+                        Temperature: {{ $temp }} °C
                         {{-- {{ Cookie::get('weatherTemp') }} °C --}}
                     </div>
                     <div class="col-4">
@@ -104,6 +104,59 @@
                 @else
                     <p>Produk tidak ditemukan.</p>
                 @endif
+            </div>
+
+            <!-- forum -->
+            <div class="col-12 justify-content-center text-center mb-5 p-5 px-0">
+                <!-- Comment Section -->
+                <div class="card">
+                    <div class="card-header">
+                        FORUM & COMMUNITY
+                    </div>
+                    <div class="card-body">
+                        <!-- Single Comment -->
+                        <div class="media mt-3">
+                            <div class="col-12">
+                                <div class="row">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/4440/4440953.png" class="col-1 mr-3" alt="Another User Avatar">
+                                    <div class="col-6 border text-start">
+                                        <h5 class="mt-0">Gilbert</h5>
+                                        La Roche Posay Effaclar is worth to buy for very very dry skin!
+                                        <button type="button" class="btn btn-link">reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Another Comment -->
+                        <div class="media mt-3">
+                            <div class="col-12">
+                                <div class="row">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/949/949644.png" class="col-1 mr-3" alt="Another User Avatar">
+                                    <div class="col-6 border text-start">
+                                        <h5 class="mt-0">Nadine</h5>
+                                        COSRX Advance Snail is so soo goooodddd
+                                        <button type="button" class="btn btn-link">reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add a Comment Form -->
+                        <form class="mt-4">
+                            <div class="form-group">
+                                <label for="userName">Your Name</label>
+                                <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="commentText">Comment</label>
+                                <textarea class="form-control" id="commentText" rows="3" placeholder="Enter your comment"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary rounded-0 mt-3" style="font-weight: 500; width: 100px; font-weight: 700;">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
