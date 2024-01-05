@@ -80,7 +80,7 @@
                                     <img src="https://smithandcaugheys-cdn.freetls.fastly.net/data/media/images/catalogue/m285/s2421000_1.jpg" class="d-block w-100" style="height: 327.45px;">
                                     <div class="card-body">
                                         <h5 class="card-title">MOISTURIZER</h5>
-                                        <p class="card-text">Penejlasan moisturizer</p>
+                                        <p class="card-text">Penejlasan moisturizer xxxxxxxxxxxxxxxxxxxxxx<br/>xxxxxxxxxxxxxxxxxxx</p>
                                     </div>
                                 </div>
                             </div>
@@ -89,16 +89,16 @@
                                     <img src="https://image.harrods.com/kiehls-ultra-light-daily-uv-defense-mineral-sunscreen_14799553_23617021_1000.jpg" class="d-block w-100">
                                     <div class="card-body">
                                         <h5 class="card-title">SUNSCREEN</h5>
-                                        <p class="card-text">Penjelasan sunscreen</p>
+                                        <p class="card-text">Penjelasan sunscreen xxxxxxxxxxxxxxxxxxxxxx<br/>xxxxxxxxxxxxxxxxxxx</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item justify-content-center">
                                 <div class="card-body" style="background-color: #5c5555;">
-                                    <img src="https://image.harrods.com/kiehls-ultra-light-daily-uv-defense-mineral-sunscreen_14799553_23617021_1000.jpg" class="d-block w-100">
+                                    <img src="https://image.harrods.com/kiehls-clearly-corrective-dark-spot-solution_14790899_31893675_2048.jpg" class="d-block w-100">
                                     <div class="card-body">
-                                        <h5 class="card-title">APAYA</h5>
-                                        <p class="card-text">Penjelasan APAYA</p>
+                                        <h5 class="card-title">SERUM</h5>
+                                        <p class="card-text">Penjelasan SERUM  xxxxxxxxxxxxxxxxxxxxxx<br/>xxxxxxxxxxxxxxxxxxx</p>
                                     </div>
                                 </div>
                             </div>
