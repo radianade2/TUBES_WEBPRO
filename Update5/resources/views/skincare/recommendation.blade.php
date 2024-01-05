@@ -96,10 +96,11 @@
             <div class="col-12 text-center border-bottom mb-5 p-5">
                 <div class="container p-5 img" style="color: white; font-family: 'source-serif-4-caption'; position: relative; z-index: 1;">
                     <div class="col">
-                        <h3>BANADKJBAKHDBSF</h3>
+                        <h3>TEST GUIDELINES</h3>
                     </div>
                     <div class="col">
-                        <p>ksdaodhqwu</p>
+                        <p>Tes dilakukan dengan jujur sesuai kondisi anda sekarang</p>
+                        <p>Pakai mikir dulu~</p>
                     </div>
                 </div>
             </div>
