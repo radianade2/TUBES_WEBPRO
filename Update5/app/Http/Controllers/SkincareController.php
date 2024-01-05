@@ -50,21 +50,66 @@ class SkincareController extends Controller
         // Cookie::queue('weatherWindSpeed', $weatherWindSpeed, $minutes);
 
         // Cek kriteria gender dan skintype yang dipilih
-        if ($gender == 'female' && $skintype == 'oily' && ($act == '1' || $act == '2' || $act == '3') && ($sens == '4' || $sens == '5') && $preg == 'Yes' && $sun == 'Yes' && $temp<=25.00) {
+        if ($gender == 'female' && $skintype == 'oily' && ($act == '1' || $act == '2' || $act == '3') && ($sens == '4' || $sens == '5') && $preg == 'Yes' && $sun == 'Yes' && $temp>=25.00) {
             // Ambil rekomendasi produk dengan ID 1
             $recommendation = Skincare::findOrFail(1);
             return view('skincare.show', [
                 'skincare' => $recommendation,
                 'weatherDescription' => $weatherDescription,
-                'weatherTemp' => $weatherTemp,
+                'temp' => $temp,
                 'weatherWindSpeed' => $weatherWindSpeed,
             ]);
-        } else {
-            $recommendation = Skincare::findOrFail(2);;
+        } else if (($gender == 'female' || $gender == 'male') && $skintype == 'dry' && ($act == '1' || $act == '2' || $act == '3') && ($sens == '4' || $sens == '5') && $preg == 'No' && $sun == 'Yes' && $temp>=25.00) {
+            // Ambil rekomendasi produk dengan ID 2
+            $recommendation = Skincare::findOrFail(2);
             return view('skincare.show', [
                 'skincare' => $recommendation,
                 'weatherDescription' => $weatherDescription,
-                'weatherTemp' => $weatherTemp,
+                'temp' => $temp,
+                'weatherWindSpeed' => $weatherWindSpeed,
+            ]);
+        } else if (($gender == 'female' || $gender == 'male') && $skintype == 'dry' && ($act == '1' || $act == '2' || $act == '3') && ($sens == '1' || $sens == '2' || $sens == '3') && $preg == 'No' && $sun == 'No' && $temp<25.00) {
+            // Ambil rekomendasi produk dengan ID 3
+            $recommendation = Skincare::findOrFail(3);
+            return view('skincare.show', [
+                'skincare' => $recommendation,
+                'weatherDescription' => $weatherDescription,
+                'temp' => $temp,
+                'weatherWindSpeed' => $weatherWindSpeed,
+            ]);
+        } else if (($gender == 'female' || $gender == 'male') && $skintype == 'dry' && ($act == '4' || $act == '5') && ($sens == '1' || $sens == '2' || $sens == '3') && $preg == 'No' && $sun == 'No' && $temp>=25.00) {
+            // Ambil rekomendasi produk dengan ID 4
+            $recommendation = Skincare::findOrFail(4);
+            return view('skincare.show', [
+                'skincare' => $recommendation,
+                'weatherDescription' => $weatherDescription,
+                'temp' => $temp,
+                'weatherWindSpeed' => $weatherWindSpeed,
+            ]);
+        } else if (($gender == 'female' || $gender == 'male') && $skintype == 'oily' && ($act == '4' || $act == '5') && ($sens == '1' || $sens == '2' || $sens == '3') && $preg == 'No' && $sun == 'No' && $temp>=25.00) {
+            // Ambil rekomendasi produk dengan ID 5
+            $recommendation = Skincare::findOrFail(5);
+            return view('skincare.show', [
+                'skincare' => $recommendation,
+                'weatherDescription' => $weatherDescription,
+                'temp' => $temp,
+                'weatherWindSpeed' => $weatherWindSpeed,
+            ]);
+        } else if (($gender == 'female' || $gender == 'male') && $skintype == 'oily' && ($act == '1' || $act == '2' || $act == '3') && ($sens == '1' || $sens == '2' || $sens == '3') && $preg == 'No' && $sun == 'No' && $temp<25.00) {
+            // Ambil rekomendasi produk dengan ID 6
+            $recommendation = Skincare::findOrFail(6);
+            return view('skincare.show', [
+                'skincare' => $recommendation,
+                'weatherDescription' => $weatherDescription,
+                'temp' => $temp,
+                'weatherWindSpeed' => $weatherWindSpeed,
+            ]);
+        }else {
+            $recommendation = Skincare::findOrFail(7);;
+            return view('skincare.show', [
+                'skincare' => $recommendation,
+                'weatherDescription' => $weatherDescription,
+                'temp' => $temp,
                 'weatherWindSpeed' => $weatherWindSpeed,
             ]);
         }
